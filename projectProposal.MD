@@ -38,7 +38,8 @@ User can select dinner options based on diet.
 
 ## Wireframe
 
-![wireframe photo](assets/wireframe.png)
+![wireframe](https://user-images.githubusercontent.com/63210444/106367041-c913ea80-62f4-11eb-9ede-bb52d6ae07d0.png)
+
 
 
 
