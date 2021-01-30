@@ -22,6 +22,10 @@ THEN recipes are populated based on diet selected.
 WHEN I select a recipe for a specific day of the week.
 THEN it will be displayed on the weekly calendar. 
 
+GIVEN I want to input my own recipe 
+WHEN I have a specific recipe 
+THEN I will be able to save it to local storage
+
 ```
 
 ## Project Description 
@@ -34,18 +38,28 @@ User can select dinner options based on diet.
 
 ## Wireframe
 ```
-
+![wireframe photo](assets/wireframe.png)
 ```
 
 
 
 ## API to be used  
 ```
+https://developer.edamam.com/edamam-docs-nutrition-api
+https://momentjs.com/docs/
 
 ```
 
 ## Rough Breakdown of the task 
 ```
+User can search for recipes for dietary needs, then results will populate and user can drag desired meal in to the week calendar
+
 
 ```
 
+## Ideas to implement if time persist 
+```
+Daily recipe
+Archived recipe 
+
+```
