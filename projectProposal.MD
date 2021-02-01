@@ -21,10 +21,12 @@ WHEN I select a diet option
 THEN recipes are populated based on diet selected.
 WHEN I select a recipe for a specific day of the week.
 THEN it will be displayed on the weekly calendar. 
-
 GIVEN I want to input my own recipe 
 WHEN I have a specific recipe 
 THEN I will be able to save it to local storage
+GIVEN I am unsure of what kind of diet I want to follow
+WHEN I click on a link to the different diet
+THEN information of the diet will be displayed.
 
 ```
 
@@ -33,6 +35,7 @@ THEN I will be able to save it to local storage
 Weekly Dinner Planner
 Food recipes API
 User can select dinner options based on diet. 
+Can Reseaarch diets as well.
 
 ```
 
@@ -43,18 +46,27 @@ User can select dinner options based on diet.
 
 
 
-
-
 ## API to be used  
 ```
 https://developer.edamam.com/edamam-docs-nutrition-api
-https://momentjs.com/docs/
+https://www.mediawiki.org/wiki/API:Main_page#API_documentation
 
 ```
 
 ## Rough Breakdown of the task 
 ```
-User can search for recipes for dietary needs, then results will populate and user can drag desired meal in to the week calendar
+Read Documentation for APIs
+Create HTML skeleton of the application based on wireframing
+Create js for search engine for diet using Edamam
+Create js for the 10 results to show
+Create js for the results to be able to be dragged to the weekly calendar
+Create js for the saving to localstorage so when it refreshes, it doesn't delete
+create js to be able to type in your own recipe as well
+create js for an image of the meal to display for the meals
+create js for selection of meals based on specific diet
+create js for search engine for specific diet
+css for styling of the interface
+
 
 
 ```
