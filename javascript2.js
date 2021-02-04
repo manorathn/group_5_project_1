@@ -26,15 +26,12 @@ async function fetchAPI() {
     console.log(data);
 }
 
-// function generateHTML(results) {
-//     const generateHTML = '';
-//     results.map(result => {
-//         generateHTML +=
-//             "
+function generateHTML(results) {
+    const generateHTML = '';
+    results.map(result => {
+        generateHTML += ""
 
-//         "
-
-//     })
-// }
+    })
+}
 
 searchEl.addEventListener("click", fetchAPI);
