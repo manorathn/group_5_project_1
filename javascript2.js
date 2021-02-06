@@ -25,6 +25,21 @@ async function fetchAPI() {
     console.log(data);
 }
 
+//Randomizer API
+
+var randomQuery = "https://api.spoonacular.com/recipes/random?apiKey=81188f168e174959b542fc55bff0ccd6"
+// var APIKey2 = "81188f168e174959b542fc55bff0ccd6"
+async function randomAPI(){
+    const spoonnacular = randomQuery
+
+
+
+}
+
+
+
+
+
 // function generateHTML(results) {
 //     const generateHTML = '';
 //     results.map(result => {
