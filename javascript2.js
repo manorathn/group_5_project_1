@@ -25,19 +25,31 @@ async function fetchAPI() {
   console.log(data);
 }
 
-//2nd API Function  
-var secondQuery =
-  "https://api.spoonacular.com/recipes/random?apiKey=81188f168e174959b542fc55bff0ccd6";
+//Randomizer API
 
-async function randomAPI() {
-  const spoonacular = secondQuery;
-  const response = await fetch(spoonacular);
-  console.log("@nd Query", response);
+var randomQuery = "https://api.spoonacular.com/recipes/random?apiKey=81188f168e174959b542fc55bff0ccd6"
+// var APIKey2 = "81188f168e174959b542fc55bff0ccd6"
+async function randomAPI(){
+    const spoonnacular = randomQuery
 
-  const data = await response.json();
 
-  console.log(data);
+
 }
 
 
+
+
+
+// function generateHTML(results) {
+//     const generateHTML = '';
+//     results.map(result => {
+//         generateHTML += ""
+
+
 searchEl.addEventListener("click", fetchAPI);
+
+
+//modal//
+$("#modalLauncher").click(function (e) {
+    $('#myModal').foundation('reveal', 'open');
+});
