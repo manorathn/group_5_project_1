@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lobster', cursive;
+    background-color: pink;
+}
+h1 {
+    font-family: 'Lobster', cursive;  
+}
+h5{
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 100px ;
+}
+container {
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form{
+    width: 100%;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+#searchBTN {
+    justify-content: center;
+    align-items: center;
+}
+.results{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+    /* width: 100px; */
+    /* border-radius: 8px; */
+    padding: 80px;
+    margin-bottom: 50px ;
+  
+}
+
+input { 
+    text-align: center; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
