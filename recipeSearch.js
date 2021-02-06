@@ -135,10 +135,10 @@ async function fetchAPI() {
   // Recipe 4
 
   // IMG
-  // var img = document.querySelector(".img4");
-  // // console.log(img);
-  // img.src = "https://api.edamam.com/web-img/" + data.hits[4].recipe.image;
-  // console.log(data.hits[4].recipe.image);
+  var img = document.querySelector(".img4");
+  // console.log(img);
+  img.src = "https://api.edamam.com/" + data.hits[4].recipe.image;
+  console.log(data.hits[4].recipe.image);
 
   // title
   var title = document.querySelector(".title4");
