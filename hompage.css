@@ -124,3 +124,9 @@
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.ketoImg {
+  width: 500px;
+  padding: 50px;
+  
+}
