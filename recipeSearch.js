@@ -208,7 +208,6 @@ async function fetchAPI() {
 
 // Modal
 
-// Get modal element
 var modal = document.getElementById("simple-modal");
 var modalBtn = document.getElementById("modal-button");
 var closeBtn = document.getElementsByClassName("close-button")[0];
@@ -231,9 +230,6 @@ function outsideClick(event) {
     modal.style.display = "none";
   }
 }
-
-
-
 
 
 searchEl.addEventListener("click", fetchAPI);
