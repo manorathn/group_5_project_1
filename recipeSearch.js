@@ -29,12 +29,20 @@ async function fetchAPI() {
   console.log(data);
 
   // Recipe 0
-
   // IMG
   var img = document.querySelector(".img0");
   // console.log(img);
   img.src = data.hits[0].recipe.image;
   console.log(data.hits[0].recipe.image);
+
+  // Modal Image & direction
+  var imgm0 = document.querySelector(".imgm0");
+  imgm0.src = data.hits[0].recipe.image;
+  console.log(data.hits[0].recipe.image);
+
+  var direction = document.querySelector(".direction")
+  direction.textContent = data.hits[0].recipe.ingredientLines;
+  console.log(data.hits[0].recipe.ingredientLines);
 
   // title
   var title = document.querySelector(".title0");
@@ -54,6 +62,9 @@ async function fetchAPI() {
   prep.textContent = "Prep: " + data.hits[0].recipe.totalTime + " mins";
   console.log(data.hits[0].recipe.totalTime);
 
+
+
+
   // Recipe 1
 
   // IMG
@@ -61,6 +72,15 @@ async function fetchAPI() {
   // console.log(img);
   img.src = data.hits[1].recipe.image;
   console.log(data.hits[1].recipe.image);
+
+  // Modal Image & direction
+  var imgm1 = document.querySelector(".imgm1");
+  imgm1.src = data.hits[1].recipe.image;
+  console.log(data.hits[1].recipe.image);
+
+  var direction = document.querySelector(".direction1")
+  direction.textContent = data.hits[1].recipe.ingredientLines;
+  console.log(data.hits[1].recipe.ingredientLines);
 
   // title
   var title = document.querySelector(".title1");
@@ -184,7 +204,36 @@ async function fetchAPI() {
   prep.textContent = "Prep: " + data.hits[5].recipe.totalTime + " mins";
   console.log(data.hits[5].recipe.totalTime);
 
+};
+
+// Modal
+
+// Get modal element
+var modal = document.getElementById("simple-modal");
+var modalBtn = document.getElementById("modal-button");
+var closeBtn = document.getElementsByClassName("close-button")[0];
+
+
+modalBtn.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
+window.addEventListener("click", outsideClick);
+
+
+function openModal() {
+  modal.style.display = "block";
 }
+
+function closeModal() {
+  modal.style.display = "none";
+}
+function outsideClick(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
 
 
 searchEl.addEventListener("click", fetchAPI);
