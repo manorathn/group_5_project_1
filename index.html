@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Din Din! | Welcome</title>
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/homepage.css">
+  <link rel="stylesheet" href="./Assets/CSS/modal.css">
+</head>
+
+<!-- Nav Bar-->
+<div class="top-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
+  <button class=" dark" type="button" data-toggle="main-nav"></button>
+  <div class="logo"><a href=""><img src=""></a>
+    <div class="top-bar">
+      <div class="row">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Din Din!</li>
+          </ul>
+        </div>
+        <div class="top-bar-right top-bar" id="main-nav">
+          <ul class="medium-horizontal menu horizontal">
+            <li class="is-active"><a href="index.html">Home</a></li>
+            <li class="is-active"><a href="RecipeSearchPage.html">Recipe Search</a></li>
+            <li class="is-active"><a href="contact.html">Contact</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Top Bar -->
+  <br>
+  <!-- You can now combine a row and column if you just need a 12 column row -->
+  <div class="row">
+    <div class="grid-x" id="hero">
+      <div class="cell">
+        <img src="https://placehold.it/1024x300?text=wide+image" class="center">
+      </div>
+    </div>
+    <div class="grid-x">
+      <div class="cell">
+        <h1 class="aboutHeader">
+          About
+        </h1>
+      </div>
+    </div>
+    <div class="grid-x">
+      <div class="cell-about-section">
+        <div class="columns medium-6">
+          <p class="about-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac
+            hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
+        </div>
+        <div class="columns medium-6">
+          <p class="about-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac
+            hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+
+  <body>
+    <img class="modal-open" data-modal="modal1" src="./IMG/keto.jpeg" width="50%" height="50%" alt="ketoImage">
+    <img class="modal-open" data-modal="modal2" src="./IMG/Pescatarian.jpg" width="50%" height="50%" alt="ketoImage">
+    <img class="modal-open" data-modal="modal3" src="./IMG/vegan.jpeg" width="50%" height="50%" alt="ketoImage">
+    <img class="modal-open" data-modal="modal4" src="./IMG/balanced.jpeg" width="50%" height="50%" alt="ketoImage">
+
+
+
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <img class="modal-header" src="./IMG/keto.jpeg" width="50%" height="50%" alt="ketoImage">
+        <div class="modal-header">Keto</div>
+        <div class="modal-body">Keto Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+          tempore recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis
+          consequatur
+          tenetur minima nostrum fugit ipsam molestias esse!</div>
+        <div class="modal-footer"><button class="link modal-close">Close Modal</button></div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal2">
+      <div class="modal-content">
+        <img class="modal-header" src="./IMG/Pescatarian.jpg" width="50%" height="50%" alt="ketoImage">
+        <div class="modal-header">Pescatarian</div>
+        <div class="modal-body">Pescatarian Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Voluptatibus
+          tempore recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis
+          consequatur tenetur minima nostrum fugit ipsam molestias esse!</div>
+        <div class="modal-footer"><button class="link modal-close">Close Modal</button></div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal3">
+      <div class="modal-content">
+        <img class="modal-header" src="./IMG/vegan.jpeg" width="50%" height="50%" alt="ketoImage">
+        <div class="modal-header">Vegan</div>
+        <div class="modal-body">Vegan Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+          tempore recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis
+          consequatur tenetur minima nostrum fugit ipsam molestias esse!</div>
+        <div class="modal-footer"><button class="link modal-close">Close Modal</button></div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal4">
+      <div class="modal-content">
+        <img class="modal-header" src="./IMG/balanced.jpeg" width="50%" height="50%" alt="ketoImage">
+        <div class="modal-header">Balanced</div>
+        <div class="modal-body">Balanced Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+          tempore recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis
+          consequatur tenetur minima nostrum fugit ipsam molestias esse!</div>
+        <div class="modal-footer"><button class="link modal-close">Close Modal</button></div>
+      </div>
+    </div>
+    <!-- End of Modal -->
+
+    <script src="./Assets/JS/modal.js"></script>
+    <script src="./Assets/JS/recipeAPI2.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <div></div>
+  </body>
+
+</html>

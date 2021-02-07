@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Lobster', cursive;
-    background-color: pink;
+    background-color: #eee;
 }
 h1 {
     font-family: 'Lobster', cursive;  
@@ -15,8 +15,8 @@ h5{
     font-family:Arial, Helvetica, sans-serif;
 }
 img{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
 }
 section{
@@ -41,13 +41,15 @@ container {
 form{
     width: 100%;
     text-align: center;
-    padding-left: 30%;
+    padding-left: 38%;
     padding-right: 30%;
 }
 
 #searchBTN {
     justify-content: center;
     align-items: center;
+    
+    
 }
 .results{
     margin-top: 50px;
@@ -68,3 +70,52 @@ input {
     text-align: center; 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+
+/* Modal */
+.button {
+    background: #2199e8;
+    /* padding: 16px 24px; */
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    font-size: 20px;
+    
+  }
+  
+  .button:hover {
+    background: rebeccapurple;
+    cursor: pointer;
+  }
+  
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #f4f4f4;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  .modal-body {
+    padding: 10px 20px;
+    color: #000;
+  }
+  
+  .close-button {
+    cursor: pointer;
+    color: #000;
+  }
