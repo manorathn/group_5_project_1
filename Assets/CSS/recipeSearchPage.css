@@ -41,13 +41,15 @@ container {
 form{
     width: 100%;
     text-align: center;
-    padding-left: 30%;
+    padding-left: 38%;
     padding-right: 30%;
 }
 
 #searchBTN {
     justify-content: center;
     align-items: center;
+    
+    
 }
 .results{
     margin-top: 50px;
@@ -77,6 +79,7 @@ input {
     border: 0;
     border-radius: 2px;
     font-size: 20px;
+    
   }
   
   .button:hover {
