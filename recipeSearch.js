@@ -31,10 +31,10 @@ async function fetchAPI() {
   // Recipe 0
 
   // IMG
-  // var img = document.querySelector(".img0");
-  // // console.log(img);
-  // img.src = "https://api.edamam.com/web-img/" + data.hits[0].recipe.image;
-  // console.log(data.hits[0].recipe.image);
+  var img = document.querySelector(".img0");
+  // console.log(img);
+  img.src = data.hits[0].recipe.image;
+  console.log(data.hits[0].recipe.image);
 
   // title
   var title = document.querySelector(".title0");
@@ -57,10 +57,10 @@ async function fetchAPI() {
   // Recipe 1
 
   // IMG
-  // var img = document.querySelector(".img1");
-  // // console.log(img);
-  // img.src = "https://api.edamam.com/web-img/" + data.hits[1].recipe.image;
-  // console.log(data.hits[1].recipe.image);
+  var img = document.querySelector(".img1");
+  // console.log(img);
+  img.src = data.hits[1].recipe.image;
+  console.log(data.hits[1].recipe.image);
 
   // title
   var title = document.querySelector(".title1");
@@ -83,10 +83,10 @@ async function fetchAPI() {
   // Recipe 2
 
   // IMG
-  // var img = document.querySelector(".img2");
-  // // console.log(img);
-  // img.src = "https://api.edamam.com/web-img/" + data.hits[2].recipe.image;
-  // console.log(data.hits[2].recipe.image);
+  var img = document.querySelector(".img2");
+  // console.log(img);
+  img.src = data.hits[2].recipe.image;
+  console.log(data.hits[2].recipe.image);
 
   // title
   var title = document.querySelector(".title2");
@@ -109,10 +109,10 @@ async function fetchAPI() {
   // Recipe 3
 
   // IMG
-  // var img = document.querySelector(".img3");
-  // // console.log(img);
-  // img.src = "https://api.edamam.com/web-img/" + data.hits[3].recipe.image;
-  // console.log(data.hits[3].recipe.image);
+  var img = document.querySelector(".img3");
+  // console.log(img);
+  img.src = data.hits[3].recipe.image;
+  console.log(data.hits[3].recipe.image);
 
   // title
   var title = document.querySelector(".title3");
@@ -137,7 +137,7 @@ async function fetchAPI() {
   // IMG
   var img = document.querySelector(".img4");
   // console.log(img);
-  img.src = "https://api.edamam.com/" + data.hits[4].recipe.image;
+  img.src = data.hits[4].recipe.image;
   console.log(data.hits[4].recipe.image);
 
   // title
@@ -161,10 +161,10 @@ async function fetchAPI() {
   // Recipe 5
 
   // IMG
-  // var img = document.querySelector(".img5");
-  // // console.log(img);
-  // img.src = "https://api.edamam.com/web-img/" + data.hits[5].recipe.image;
-  // console.log(data.hits[5].recipe.image);
+  var img = document.querySelector(".img5");
+  // console.log(img);
+  img.src = data.hits[5].recipe.image;
+  console.log(data.hits[5].recipe.image);
 
   // title
   var title = document.querySelector(".title5");
@@ -184,9 +184,8 @@ async function fetchAPI() {
   prep.textContent = "Prep: " + data.hits[5].recipe.totalTime + " mins";
   console.log(data.hits[5].recipe.totalTime);
 
-};
+}
 
 
 searchEl.addEventListener("click", fetchAPI);
-
 
