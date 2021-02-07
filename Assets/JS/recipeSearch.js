@@ -27,7 +27,8 @@ async function fetchAPI() {
   const data = await response.json();
   // generateHTML(data.hits);
   console.log(data);
-
+ 
+ 
   // Recipe 0
   // IMG
   var img = document.querySelector(".img0");
@@ -203,8 +204,18 @@ async function fetchAPI() {
   // console.log(img);
   prep.textContent = "Prep: " + data.hits[5].recipe.totalTime + " mins";
   console.log(data.hits[5].recipe.totalTime);
+  
+  // Function for localStorage 
+   $(".loaded").click(function(){
+    var imgInside = data.hits[0].recipe.image;
+    var imgId = $(this).parent().attr("class");
+    var savedImage = $(".imgSaved1").attr("src", imgInside);
+    localStorage.setItem(imgId, imgInside);
+
+    })
 
 };
+
 
 // Modal
 
