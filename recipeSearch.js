@@ -40,9 +40,19 @@ async function fetchAPI() {
   imgm0.src = data.hits[0].recipe.image;
   console.log(data.hits[0].recipe.image);
 
+  // GETTTING INGREDIRENTS
+
   var direction = document.querySelector(".direction")
-  direction.textContent = data.hits[0].recipe.ingredientLines;
-  console.log(data.hits[0].recipe.ingredientLines);
+  var ingredients = data.hits[0].recipe.ingredientLines
+  
+    for ( i = 0; i < ingredients.length; i++) {
+      const element = ingredients[i];
+      var ingredientLi = document.createElement('li')
+      
+      ingredientLi.innerHTML = element
+      direction.append(ingredientLi)
+      console.log(ingredientLi)
+    }
 
   // title
   var title = document.querySelector(".title0");
