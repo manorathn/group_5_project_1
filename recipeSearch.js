@@ -29,12 +29,20 @@ async function fetchAPI() {
   console.log(data);
 
   // Recipe 0
-
   // IMG
-  // var img = document.querySelector(".img0");
-  // // console.log(img);
-  // img.src = "https://api.edamam.com/web-img/" + data.hits[0].recipe.image;
-  // console.log(data.hits[0].recipe.image);
+  var img = document.querySelector(".img0");
+  // console.log(img);
+  img.src = data.hits[0].recipe.image;
+  console.log(data.hits[0].recipe.image);
+
+  // Modal Image & direction
+  var imgm0 = document.querySelector(".imgm0");
+  imgm0.src = data.hits[0].recipe.image;
+  console.log(data.hits[0].recipe.image);
+
+  var direction = document.querySelector(".direction")
+  direction.textContent = data.hits[0].recipe.ingredientLines;
+  console.log(data.hits[0].recipe.ingredientLines);
 
   // title
   var title = document.querySelector(".title0");
@@ -54,13 +62,25 @@ async function fetchAPI() {
   prep.textContent = "Prep: " + data.hits[0].recipe.totalTime + " mins";
   console.log(data.hits[0].recipe.totalTime);
 
+
+
+
   // Recipe 1
 
   // IMG
-  // var img = document.querySelector(".img1");
-  // // console.log(img);
-  // img.src = "https://api.edamam.com/web-img/" + data.hits[1].recipe.image;
-  // console.log(data.hits[1].recipe.image);
+  var img = document.querySelector(".img1");
+  // console.log(img);
+  img.src = data.hits[1].recipe.image;
+  console.log(data.hits[1].recipe.image);
+
+  // Modal Image & direction
+  var imgm1 = document.querySelector(".imgm1");
+  imgm1.src = data.hits[1].recipe.image;
+  console.log(data.hits[1].recipe.image);
+
+  var direction = document.querySelector(".direction1")
+  direction.textContent = data.hits[1].recipe.ingredientLines;
+  console.log(data.hits[1].recipe.ingredientLines);
 
   // title
   var title = document.querySelector(".title1");
@@ -83,10 +103,10 @@ async function fetchAPI() {
   // Recipe 2
 
   // IMG
-  // var img = document.querySelector(".img2");
-  // // console.log(img);
-  // img.src = "https://api.edamam.com/web-img/" + data.hits[2].recipe.image;
-  // console.log(data.hits[2].recipe.image);
+  var img = document.querySelector(".img2");
+  // console.log(img);
+  img.src = data.hits[2].recipe.image;
+  console.log(data.hits[2].recipe.image);
 
   // title
   var title = document.querySelector(".title2");
@@ -109,10 +129,10 @@ async function fetchAPI() {
   // Recipe 3
 
   // IMG
-  // var img = document.querySelector(".img3");
-  // // console.log(img);
-  // img.src = "https://api.edamam.com/web-img/" + data.hits[3].recipe.image;
-  // console.log(data.hits[3].recipe.image);
+  var img = document.querySelector(".img3");
+  // console.log(img);
+  img.src = data.hits[3].recipe.image;
+  console.log(data.hits[3].recipe.image);
 
   // title
   var title = document.querySelector(".title3");
@@ -137,7 +157,7 @@ async function fetchAPI() {
   // IMG
   var img = document.querySelector(".img4");
   // console.log(img);
-  img.src = "https://api.edamam.com/" + data.hits[4].recipe.image;
+  img.src = data.hits[4].recipe.image;
   console.log(data.hits[4].recipe.image);
 
   // title
@@ -161,10 +181,10 @@ async function fetchAPI() {
   // Recipe 5
 
   // IMG
-  // var img = document.querySelector(".img5");
-  // // console.log(img);
-  // img.src = "https://api.edamam.com/web-img/" + data.hits[5].recipe.image;
-  // console.log(data.hits[5].recipe.image);
+  var img = document.querySelector(".img5");
+  // console.log(img);
+  img.src = data.hits[5].recipe.image;
+  console.log(data.hits[5].recipe.image);
 
   // title
   var title = document.querySelector(".title5");
@@ -186,7 +206,31 @@ async function fetchAPI() {
 
 };
 
+// Modal
+
+var modal = document.getElementById("simple-modal");
+var modalBtn = document.getElementById("modal-button");
+var closeBtn = document.getElementsByClassName("close-button")[0];
+
+
+modalBtn.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
+window.addEventListener("click", outsideClick);
+
+
+function openModal() {
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+function outsideClick(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 
 searchEl.addEventListener("click", fetchAPI);
-
 
