@@ -119,8 +119,7 @@ input {
     cursor: pointer;
     color: #000;
   }
-
-.saved {
-    padding: 80px;
-    margin-bottom: 50px ;
-}
+ 
+  .hide {
+      display: none;
+  }

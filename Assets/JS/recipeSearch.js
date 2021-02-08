@@ -12,12 +12,14 @@ searchForm.addEventListener('submit', (event) => {
   event.preventDefault();
   searchQuery = event.target.querySelector("input").value;
 
+  $(".results").removeClass("hide")
   // if (searchQuery !== keto || vegan || balanced || pescetarian) {
   //     alert("Please select Keto, Vegan, Balanced, Pescetarian");
   // }
   console.log(searchQuery);
   fetchAPI()
 });
+
 
 async function fetchAPI() {
   const edamame = edamameURL + searchQuery + '&app_id=' + appId + '&app_key=' + APIKey + '&to=10';
@@ -207,14 +209,33 @@ async function fetchAPI() {
   
   // Function for localStorage 
    $(".loaded").click(function(){
+<<<<<<< HEAD
     var imgInside = data.hits[0].recipe.image;
     var imgId = $(this).parent().attr("class");
     var savedImage = $(".imgSaved1").attr("src", imgInside);
     localStorage.setItem(imgId, imgInside);
 
     })
+=======
+    localStorage.setItem("image0", data.hits[0].recipe.image);
+    // localStorage.setItem("image1", data.hits[1].recipe.image);
+    // localStorage.setItem("image2", data.hits[2].recipe.image);
+    // localStorage.setItem("image3", data.hits[3].recipe.image);
+    // localStorage.setItem("image4", data.hits[4].recipe.image);
+    // localStorage.setItem("image5", data.hits[5].recipe.image);
 
-};
+    localStorage.setItem("title0", data.hits[0].recipe.label);
+    // localStorage.setItem("title1", data.hits[1].recipe.label)
+    // localStorage.setItem("title2", data.hits[2].recipe.label)
+    // localStorage.setItem("title3", data.hits[3].recipe.label)
+    // localStorage.setItem("title4", data.hits[4].recipe.label)
+    // localStorage.etItem("title5", data.hits[5].recipe.label)
+   });
+    
+}
+
+>>>>>>> recipeSearch
+
 
 
 // Modal
