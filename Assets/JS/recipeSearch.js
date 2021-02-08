@@ -230,28 +230,56 @@ async function fetchAPI() {
 
 // Modal
 
-var modal = document.getElementById("simple-modal");
-var modalBtn = document.getElementById("modal-button");
-var closeBtn = document.getElementsByClassName("close-button")[0];
+var modal = Array.from(document.getElementsByClassName("modal-overlay"));
+
+for (let i = 0; i < modal.length; i++) {
+  const open = modal[i];
+  
+
+  function openModal() {
+    open.style.display = "block";
+  }
+
+  function outsideClick(event) {
+    if (event.target == open) {
+      open.style.display = "none";
+    }
+  }
+
+  function closeModal() {
+    open.style.display = "none";
+  }
+
+}
 
 
-modalBtn.addEventListener("click", openModal);
-closeBtn.addEventListener("click", closeModal);
+var modalBtn = Array.from(document.getElementsByClassName("button"));
+for (let i = 0; i < modalBtn.length; i++) {
+  const close = modalBtn[i];
+
+  close.addEventListener("click", openModal);
+  
+}
+
+
+
+
+var closeBtn = Array.from(document.getElementsByClassName("close-button"));
+for (let i = 0; i < closeBtn.length; i++) {
+  const element = closeBtn[i];
+  
+  element.addEventListener("click", closeModal);
+  
+}
+
+
 window.addEventListener("click", outsideClick);
 
 
-function openModal() {
-  modal.style.display = "block";
-}
 
-function closeModal() {
-  modal.style.display = "none";
-}
-function outsideClick(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+
+
+
 
 
 searchEl.addEventListener("click", fetchAPI);
