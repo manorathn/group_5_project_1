@@ -6,27 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Din Din! | Welcome</title>
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-  <link rel="stylesheet" href="./homepage.css">
+  <link rel="stylesheet" href="./Assets/CSS/homepage.css">
+  <link rel="stylesheet" href="./Assets/CSS/modal.css">
 </head>
 
 <!-- Nav Bar-->
 <div class="top-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
   <button class=" dark" type="button" data-toggle="main-nav"></button>
-  <div class="logo"><a href="#"><img src="logo.png"></a>
+  <div class="logo"><a href=""><img src=""></a>
     <div class="top-bar">
       <div class="row">
         <div class="top-bar-left">
           <ul class="dropdown menu" data-dropdown-menu>
             <li class="menu-text">Din Din!</li>
-            <li><a href="./recipebook.html">My Recipes</a></li>
           </ul>
         </div>
         <div class="top-bar-right top-bar" id="main-nav">
           <ul class="medium-horizontal menu horizontal">
-            <li class="is-active"><a href="homepage.html">Home</a></li>
+            <li class="is-active"><a href="index.html">Home</a></li>
             <li class="is-active"><a href="RecipeSearchPage.html">Recipe Search</a></li>
+            <li class="is-active"><a href="recipebook.html">Recipe Book</a></li>
             <li class="is-active"><a href="contact.html">Contact</a></li>
-            <!-- <li class="is-active"><a href="#">Login</a></li> -->
+          </ul>
 
         </div>
       </div>
@@ -63,68 +64,111 @@
       </div>
     </div>
   </div>
-  <!-- Modal -->
-  <div class="row" id="modalrow">
-    <img src="./IMG/keto.jpeg" class="imgDescr" id="modal-button" alt="ketoImage">
-    <div id="simple-modal" class="modal-overlay">
-      <div class="modal-content">
-        <button class="close-button">X</button>
-        <div class="modal-body">
-          <img class="ketoImg" src="/img1.png" alt="">
-          <li class="direction">Keto Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus tempore
-            recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis consequatur
-            tenetur minima nostrum fugit ipsam molestias esse!</li>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <img src="./IMG/vegan.jpeg" class="imgDescr" id="modal-button" alt="veganImage">
-    <div id="simple-modal" class="modal-overlay">
-      <div class="modal-content">
-        <button class="close-button">X</button>
-        <div class="modal-body">
-          <img class="veganImg" src="/img1.png" alt="">
-          <li class="direction">Vegan Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
-            tempore recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis
-            consequatur tenetur minima nostrum fugit ipsam molestias esse!</li>
-        </div>
-      </div>
-    </div>
-    <!-- Modal 3 -->
-    <img src="./IMG/Pescatarian.jpg" class="imgDescr" id="modal-button" alt="pescImage">
-    <div id="simple-modal" class="modal-overlay">
-      <div class="modal-content">
-        <button class="close-button">X</button>
-        <div class="modal-body">
-          <img class="pescImg" src="/img1.png" alt="">
-          <li class="direction">Pescatarian Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
-            tempore recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis
-            consequatur tenetur minima nostrum fugit ipsam molestias esse!</li>
-        </div>
-      </div>
-    </div>
-    <!--Modal 4  -->
-    <img src="./IMG/balanced.jpeg" class="imgDescr" id="modal-button" alt="balImage">
-    <div id="simple-modal" class="modal-overlay">
-      <div class="modal-content">
-        <button class="close-button">X</button>
-        <div class="modal-body">
-          <img class="balImg" src="/img1.png" alt="">
-          <li class="direction">Balanced Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
-            tempore recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis
-            consequatur tenetur minima nostrum fugit ipsam molestias esse!</li>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End of Modal -->
+  <hr>
 
 
-  <script src="recipeAPI2.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-  <div></div>
-  </body>
+  <!-- Random recipe  -->
+  <div class="row mt-5">
+    <div class="grid-x">
+    </div>
+    <div class="grid-x">
+      <div>
+        <div>
+          <div class="results pt-5">
+            <div>
+              <h2 class="text-center">Random Recipe of the Day</h2>
+            </div>
+            <div class="item text-center">
+              <h5 class="title0"><b></b></h5>
+              <br>
+              <img class="img0" src="" alt="">
+              <hr>
+              <div class="flex-container">
+                <h6 class="direction"></h6>
+                <h6 class="prep0"></h6>
+                <a href="=#"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+
+
+
+      <!-- Modal -->
+
+      <body>
+        <div class="container">
+          <div class="grid-1 ">
+            <img class="modal-open" data-modal="modal1" src="./IMG/keto.jpeg" alt="ketoImage">
+          </div>
+          <div class="grid-2 ">
+            <img class="modal-open" data-modal="modal2" src="./IMG/Pescatarian.jpg" "
+          alt=" ketoImage">
+          </div>
+          <div class="grid-3 ">
+            <img class="modal-open" data-modal="modal3" src="./IMG/vegan.jpeg" alt="ketoImage">
+          </div>
+          <div class="grid-4 ">
+            <img class="modal-open" data-modal="modal4" src="./IMG/balanced.jpeg" alt="ketoImage">
+          </div>
+
+        </div>
+
+        <div class="modal" id="modal1">
+          <div class="modal-content">
+            <img class="modal-header" src="./IMG/keto.jpeg" width="50%" height="50%" alt="ketoImage">
+            <div class="modal-header">Keto</div>
+            <div class="modal-body">Keto Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+              tempore recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis
+              consequatur
+              tenetur minima nostrum fugit ipsam molestias esse!</div>
+            <div class="modal-footer"><button class="link modal-close">Close Modal</button></div>
+          </div>
+        </div>
+
+        <div class="modal" id="modal2">
+          <div class="modal-content">
+            <img class="modal-header" src="./IMG/Pescatarian.jpg" width="50%" height="50%" alt="ketoImage">
+            <div class="modal-header">Pescatarian</div>
+            <div class="modal-body">Pescatarian Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatibus
+              tempore recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis
+              consequatur tenetur minima nostrum fugit ipsam molestias esse!</div>
+            <div class="modal-footer"><button class="link modal-close">Close Modal</button></div>
+          </div>
+        </div>
+
+        <div class="modal" id="modal3">
+          <div class="modal-content">
+            <img class="modal-header" src="./IMG/vegan.jpeg" width="50%" height="50%" alt="ketoImage">
+            <div class="modal-header">Vegan</div>
+            <div class="modal-body">Vegan Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+              tempore recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis
+              consequatur tenetur minima nostrum fugit ipsam molestias esse!</div>
+            <div class="modal-footer"><button class="link modal-close">Close Modal</button></div>
+          </div>
+        </div>
+
+        <div class="modal" id="modal4">
+          <div class="modal-content">
+            <img class="modal-header" src="./IMG/balanced.jpeg" width="50%" height="50%" alt="ketoImage">
+            <div class="modal-header">Balanced</div>
+            <div class="modal-body">Balanced Diet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+              tempore recusandae itaque quia, enim dicta dolores aperiam dignissimos quo natus inventore officiis
+              consequatur tenetur minima nostrum fugit ipsam molestias esse!</div>
+            <div class="modal-footer"><button class="link modal-close">Close Modal</button></div>
+          </div>
+        </div>
+        <!-- End of Modal -->
+
+        <script src="./Assets/JS/modal.js"></script>
+        <script src="./Assets/JS/recipeAPI2.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+        <div></div>
+      </body>
 
 </html>

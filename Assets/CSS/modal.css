@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.modal-open {
+    padding: 8px 16px;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+    display: none;
+    animation: ;
+
+}
+
+.modal-content {
+    background: white;
+    margin-top: 10%;
+    width:  50%;
+    margin-left: auto ;
+    margin-right: auto;
+    padding: 8px 24px;
+    border-radius: 4px;
+    z-index: 4;
+
+}
+.modal-header {
+    font-weight: 500;
+    padding: 10px, 0;
+    font-size: 26px;
+}
+
+.modal-header .modal-content{
+    float: right;
+    font-size: 20px;
+    background: white;
+    border: 0;
+    outline: 0;
+    padding: 5px 8px;
+    border-radius: 50px;
+}
+
+.modal.body{
+    color: #7b7b7b;
+    padding:15px 0;
+
+}
+
+.modal-footer {
+    padding: 15px 0;
+
+}
+
+.container {
+    display: grid;
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* width: 100vw; */
+    height: 100vh;
+    @media screen and (max-width: 70em) {
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+  
+  // .grid-1,
+  // .grid-2,
+  // .grid-3,
+  // .grid-4 {
+  //   grid-template-rows: repeat(6, 1fr);
+  //   grid-template-columns: repeat(6, 1fr);
+  // }
+  .grid-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    @media screen and (max-width: 70em) {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row: 1;
+    }
+  }
+  
+  .grid-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 1;
+    @media screen and (max-width: 70em) {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row: 2;
+    }
+  }
+  
+  .grid-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+    @media screen and (max-width: 60em) {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row: 3;
+    }
+  }
+  
+  .grid-4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 2;
+    @media screen and (max-width: 70em) {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row: 4;
+    }
+  }
+  
+  .callout {
+    margin: 0;
+  }
+
+
+
