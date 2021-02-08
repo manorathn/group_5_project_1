@@ -17,8 +17,8 @@
 
     <div class="top-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
         <button class=" dark" type="button" data-toggle="main-nav"></button>
-
-
+        
+        <!-- header -->
         <div class="logo">
             <div class="top-bar">
                 <div class="row">
@@ -31,126 +31,176 @@
                         <ul class="medium-horizontal menu horizontal">
                             <li class="is-active"><a href="index.html">Home</a></li>
                             <li class="is-active"><a href="RecipeSearchPage.html">Recipe Search</a></li>
+                            <li class="is-active"><a href="recipebook.html">Recipe Book</a></li>
+                            <li class="is-active"><a href="contact.html">Contact</a></li>
+                        </ul>
 
-                            <li class="is-active"><a href="#">Contact</a></li>
-                            <!-- <li class="is-active"><a href="#">Login</a></li> -->
                     </div>
-                </div>
-            </div>
-        </div>
 
+                    <!-- Search Bar for diets -->
+                    <div class="container">
+                        <div>
+                            <ul class="orbit-container">
+                                <h1 class="brand text-center">Recipes</h1>
+                            </ul>
+                        </div>
 
+                        <form class="text-center">
+                            <input type="text" placeholder="Search Healthy Meals" id="diet">
+                            <button class="center" id="searchBtn">Search</button>
+                        </form>
 
-
-
-
-        <!-- Search Bar for diets -->
-        <div class="container">
-
-            <div>
-                <ul class="orbit-container">
-                    <h1 class="brand text-center">Recipes</h1>
-                </ul>
-            </div>
-
-            <form class="text-center">
-                <input type="text" placeholder="Search Healthy Meals" id="diet">
-                <button class="center" id="searchBtn">Search</button>
-            </form>
-        </div>
-        
-        <!-- Recipes -->
-
-        <div class="container">
-            <div class="row">
-                <div class="large-4 columns">                 
-                        <div class="results">
+                        <!-- Recipe 0 -->
+                        <div class="results hide">
                             <div class="item">
-                                <img class="img0" src="./Assets/keto.jpeg" alt="">
+                                <img class="loaded img0" alt="">
                                 <div class="flex-container">
-                                    <h5 class="title0"><b>#</b></h5>
-                                    <h6 class="calories0">#</h6>
-                                    <h6 class="prep0">#</h6>
-
+                                    <h5 class="title0"><b></b></h5>
+                                    <h6 class="calories0"></h6>
+                                    <h6 class="prep0"></h6>
                                     <a href="=#"></a>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <img class="img1" src="./Assets/Pescatarian.jpg" alt="">
-                                <div class="flex-container">
-                                    <h5 class="title1"><b>#</b></h5>
-                                    <h6 class="calories1">#</h6>
-                                    <h6 class="prep1">#</h6>
+                                <!-- Modal recipe 0 -->
+                                <button id="modal-button" class="button">Click for Recipe</button>
+                                <!-- Modal Content -->
+                                <div id="simple-modal" class="modal-overlay">
+                                    <div class="modal-content">
+                                        <button class="close-button">X</button>
+                                        <div class="modal-body">
+                                            <img class="imgm0" src="img1.png" alt="">
+                                            <li class="direction"></li>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            </div>
+
+                            <!-- recipe 1 -->
+                            <div class="item">
+                                <img class="img1" alt="">
+                                <div class="flex-container">
+                                    <h5 class="title1"><b></b></h5>
+                                    <h6 class="calories1"></h6>
+                                    <h6 class="prep1"></h6>
                                     <a href="=#"></a>
                                 </div>
+                                <!-- Modal recipe 1 -->
+                                <button id="modal-button1" class="button">Click for Recipe</button>
+                                <!-- modal content-->
+                                <div id="simple-modal1" class="modal-overlay">
+                                    <div class="modal-content">
+                                        <button class="close-button1">X</button>
+                                        <div class="modal-body">
+                                            <img class="imgm1" src="" alt="">
+                                            <li class="direction1"></li>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="item">
-                                <img class="img2" src="./Assets/keto.jpeg" alt="">
-                                <div class="flex-container">
-                                    <h5 class="title2"><b>#</b></h5>
-                                    <h6 class="calories2">#</h6>
-                                    <h6 class="prep2">#</h6>
 
+
+                            <!-- recipe 2 -->
+                            <div class="item">
+                                <img class="img2" alt="">
+                                <div class="flex-container">
+                                    <h5 class="title2"><b></b></h5>
+                                    <h6 class="calories2"></h6>
+                                    <h6 class="prep2"></h6>
                                     <a href="=#"></a>
+                                </div>
+                                <!-- Modal recipe 2 -->
+                                <button id="modal-button" class="button">Click for Recipe</button>
+                                <!-- Modal Content -->
+                                <div id="simple-modal" class="modal-overlay">
+                                    <div class="modal-content">
+                                        <button class="close-button">X</button>
+                                        <div class="modal-body">
+                                            <img class="imgm2" src="" alt="">
+                                            <li class="direction2"></li>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                </div>
-                <div class="large-4 columns">   
-                        <div class="results">
-                            <div class="item">
-                                <img class="img3" src="./Assets/keto.jpeg" alt="">
-                                <div class="flex-container">
-                                    <h5 class="title3"><b>#</b></h5>
-                                    <h6 class="calories3">#</h6>
-                                    <h6 class="prep3">#</h6>
 
+
+                        <!-- recipe 3 -->
+                        <div class="results hide">
+                            <div class="item">
+                                <img class="img3" alt="">
+                                <div class="flex-container">
+                                    <h5 class="title3"><b></b></h5>
+                                    <h6 class="calories3"></h6>
+                                    <h6 class="prep3"></h6>
                                     <a href="=#"></a>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <img class="img4" src="./Assets/keto.jpeg" alt="">
-                                <div class="flex-container">
-                                    <h5 class="title4"><b>#</b></h5>
-                                    <h6 class="calories4">#</h6>
-                                    <h6 class="prep4">#</h6>
-
-                                    <a href="=#"></a>
+                                <!-- Modal recipe 3 -->
+                                <button id="modal-button" class="button">Click for Recipe</button>
+                                <!-- Modal Content -->
+                                <div id="simple-modal" class="modal-overlay">
+                                    <div class="modal-content">
+                                        <button class="close-button">X</button>
+                                        <div class="modal-body">
+                                            <img class="imgm3" src="" alt="">
+                                            <li class="direction3"></li>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <img class="img5" src="./Assets/keto.jpeg" alt="">
-                                <div class="flex-container">
-                                    <h5 class="title5"><b>#</b></h5>
-                                    <h6 class="calories5">#</h6>
-                                    <h6 class="prep5">#</h6>
 
+                            <!-- recipe 4 -->
+                            <div class="item">
+                                <img class="img4" alt="">
+                                <div class="flex-container">
+                                    <h5 class="title4"><b></b></h5>
+                                    <h6 class="calories4"></h6>
+                                    <h6 class="prep4"></h6>
                                     <a href="=#"></a>
+                                </div>
+                                <!-- Modal recipe 3 -->
+                                <button id="modal-button" class="button">Click for Recipe</button>
+                                <!-- Modal Content -->
+                                <div id="simple-modal" class="modal-overlay">
+                                    <div class="modal-content">
+                                        <button class="close-button">X</button>
+                                        <div class="modal-body">
+                                            <img class="imgm4" src="" alt="">
+                                            <li class="direction4"></li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- recipe 5 -->
+                            <div class="item">
+                                <img class="img5" alt="">
+                                <div class="flex-container">
+                                    <h5 class="title5"><b></b></h5>
+                                    <h6 class="calories5"></h6>
+                                    <h6 class="prep5"></h6>
+                                    <a href="=#"></a>
+                                </div>
+                                <!-- Modal recipe 3 -->
+                                <button id="modal-button" class="button">Click for Recipe</button>
+                                <!-- Modal Content -->
+                                <div id="simple-modal" class="modal-overlay">
+                                    <div class="modal-content">
+                                        <button class="close-button">X</button>
+                                        <div class="modal-body">
+                                            <img class="imgm5" src="" alt="">
+                                            <li class="direction5"></li>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                </div>  
+
                 <!-- Results column -->
-                <div class="large-4 columns">
-                        <div class="item">
-                            <h1>Saved Recipes</h1>
-                            <img src="https://placeholder.pics/svg/300x300/1797FF-773BFF" alt="" />
-                            <img src="https://placeholder.pics/svg/300x300/1797FF-773BFF" alt="" />
-                            <img src="https://placeholder.pics/svg/300x300/1797FF-773BFF" alt="" />
-                            <img src="https://placeholder.pics/svg/300x300/1797FF-773BFF" alt="" />                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of recipe list -->
-                      <script>$(document).foundation()</script>
+                    <script>$(document).foundation()</script>  
 
-
-        <script src="./recipeSearch.js"></script>
-  
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                     <script src="./Assets/JS/recipeSearch.js"></script>
+
                 </div>
 </body>
 
