@@ -209,14 +209,6 @@ async function fetchAPI() {
   
   // Function for localStorage 
    $(".loaded").click(function(){
-<<<<<<< HEAD
-    var imgInside = data.hits[0].recipe.image;
-    var imgId = $(this).parent().attr("class");
-    var savedImage = $(".imgSaved1").attr("src", imgInside);
-    localStorage.setItem(imgId, imgInside);
-
-    })
-=======
     localStorage.setItem("image0", data.hits[0].recipe.image);
     // localStorage.setItem("image1", data.hits[1].recipe.image);
     // localStorage.setItem("image2", data.hits[2].recipe.image);
@@ -230,11 +222,9 @@ async function fetchAPI() {
     // localStorage.setItem("title3", data.hits[3].recipe.label)
     // localStorage.setItem("title4", data.hits[4].recipe.label)
     // localStorage.etItem("title5", data.hits[5].recipe.label)
-   });
-    
+   });    
 }
 
->>>>>>> recipeSearch
 
 
 
