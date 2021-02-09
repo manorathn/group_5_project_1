@@ -1,5 +1,5 @@
 .nav-container{
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 
   
@@ -11,15 +11,15 @@
 }
 
 body {
-    font-family: 'Lobster', cursive;
+    font-family: Arial;
     background-color: #eee;
 }
 h1 {
-    font-family: 'Lobster', cursive;  
+    font-family: Arial;  
 }
 h5{
      font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 img{
     width: 70%;
