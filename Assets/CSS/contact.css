@@ -1,4 +1,10 @@
 /* Three columns side by side */
+.nav-container{
+  font-family: Arial;
+  font-size: 15px;
+
+
+}
 .column {
   float: left;
   width: 33.3%;

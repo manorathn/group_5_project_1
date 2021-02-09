@@ -1,8 +1,15 @@
+.nav-container{
+    font-family: Arial;
+    font-size: 15px;
+
+  
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Lobster', cursive;
     background-color: #eee;
