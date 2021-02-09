@@ -27,6 +27,7 @@ section{
     display: flex;
     padding: 100px ;
 }
+
 container {
     width: 90%;
     height: auto;
@@ -119,6 +120,7 @@ input {
     cursor: pointer;
     color: #000;
   }
+
  
   .hide {
       display: none;

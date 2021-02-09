@@ -219,21 +219,21 @@ async function fetchAPI() {
   
   // Function for localStorage 
    $(".loaded").click(function(){
-    localStorage.setItem("image0", data.hits[0].recipe.image);
-    // localStorage.setItem("image1", data.hits[1].recipe.image);
-    // localStorage.setItem("image2", data.hits[2].recipe.image);
-    // localStorage.setItem("image3", data.hits[3].recipe.image);
-    // localStorage.setItem("image4", data.hits[4].recipe.image);
-    // localStorage.setItem("image5", data.hits[5].recipe.image);
-
-    localStorage.setItem("title0", data.hits[0].recipe.label);
-    // localStorage.setItem("title1", data.hits[1].recipe.label)
-    // localStorage.setItem("title2", data.hits[2].recipe.label)
-    // localStorage.setItem("title3", data.hits[3].recipe.label)
-    // localStorage.setItem("title4", data.hits[4].recipe.label)
-    // localStorage.etItem("title5", data.hits[5].recipe.label)
-   });    
+   console.log($(this));
+   var recipe = 
+    {
+      savedImgUrl: $(this).attr("src"), 
+      savedTitle: $(this).siblings(".flex-container").children(".titleSet").text(),
+      savedIngredients: $(this).siblings(".siblings")
+    };
+   
+    var saved = JSON.parse(localStorage.getItem("recipes"))||[];
+    saved.push(recipe);
+    localStorage.setItem("recipes", JSON.stringify(saved));
+  
+  });
 }
+var ingredients = data.hits[0].recipe.ingredientLines
 
 
 
