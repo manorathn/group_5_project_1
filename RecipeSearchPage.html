@@ -12,29 +12,31 @@
     <link rel="stylesheet" href="./Assets/CSS/recipeSearchPage.css">
 
 </head>
-
-<body>
-
+<!-- Nav Bar -->
+<div class="nav-container">
     <div class="top-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
-        <button class=" dark" type="button" data-toggle="main-nav"></button>
-        
-        <!-- header -->
-        <div class="logo">
-            <div class="top-bar">
-                <div class="row">
-                    <div class="top-bar-left">
-                        <ul class="dropdown menu" data-dropdown-menu>
-                            <li class="menu-text">Din Din!</li>
-                        </ul>
-                    </div>
-                    <div class="top-bar-right top-bar" id="main-nav">
-                        <ul class="medium-horizontal menu horizontal">
-                            <li class="is-active"><a href="index.html">Home</a></li>
-                            <li class="is-active"><a href="RecipeSearchPage.html">Recipe Search</a></li>
-                            <li class="is-active"><a href="recipebook.html">Recipe Book</a></li>
-                            <li class="is-active"><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+        <div class="top-bar">
+            <div class="row">
+            <div class="top-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Din Din!</li>
+                </ul>
+            </div>
+            <div class="top-bar-right top-bar" id="main-nav">
+                <ul class="medium-horizontal menu horizontal">
+                <li class="is-active"><a href="index.html">Home</a></li>
+                <li class="is-active"><a href="RecipeSearchPage.html">Recipe Search</a></li>
+                <li class="is-active"><a href="recipebook.html">Recipe Book</a></li>
+                <li class="is-active"><a href="contact.html">Contact</a></li>
+                </ul>
+    
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <body>
+
 
                     <!-- Search Bar for diets -->
                     <div class="container">
@@ -86,7 +88,11 @@
                                         <a href="=#"></a>
                                     </div>
                                     <!-- Modal recipe 1 -->
+            
+
                                     <button id="modal-button1" class="button">Click for Recipe</button>
+                                    <button id="add">+</button>
+                                    <button id="subtract">-</button>
                                     <!-- modal content-->
                                     <div id="simple-modal1" class="modal-overlay">
                                         <div class="modal-content">

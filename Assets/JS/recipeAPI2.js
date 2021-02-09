@@ -26,8 +26,11 @@ async function randomAPI() {
 
   // direction
   var direction = document.querySelector(".direction")
-  direction.textContent = data.recipes[0].instructions;
-  console.log(data.recipes[0].instructionss);
+  direction.innerHTML = data.recipes[0].instructions;
+
+  // direction.innerHTML(data.recipes[0].instructions);
+
+  console.log(data.recipes[0].instructions);
 
 
 
