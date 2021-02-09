@@ -2,7 +2,7 @@
 
 // API number 2
 var secondQuery =
-  "https://api.spoonacular.com/recipes/random?apiKey=81188f168e174959b542fc55bff0ccd6";
+  "https://api.spoonacular.com/recipes/random?apiKey=041f273766a645ff84a69b8f48e0e2da";
 
 async function randomAPI() {
   const spoonacular = secondQuery;
