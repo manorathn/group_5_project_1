@@ -1,4 +1,8 @@
+.nav-container{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 
+}
 .animated-search-form[type=search] {
     width: 10rem;
     border: 0.125rem solid #e6e6e6;
@@ -37,4 +41,8 @@
     text-shadow: 1px 1px 2px #0a0a0a;
   }
   
-    
+  .nav-container{
+    font-family: Arial;
+    font-size: 15px;
+  
+  }
