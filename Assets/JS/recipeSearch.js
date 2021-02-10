@@ -301,7 +301,7 @@ async function fetchAPI() {
   });
 }
 
-$(".remove-button").click(function(){
+$(".remove-button").click(function () {
   localStorage.removeItem("recipes");
 
 
