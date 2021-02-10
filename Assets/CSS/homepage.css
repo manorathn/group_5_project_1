@@ -1,4 +1,10 @@
-
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-container{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
 .marketing-site-content-section {
     display: -webkit-flex;
     display: -ms-flexbox;

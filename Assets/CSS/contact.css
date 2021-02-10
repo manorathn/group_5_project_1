@@ -1,6 +1,5 @@
- 
 
-body {
+ body {
   margin-bottom: 0;
   font-family: sans-serif;
 }
@@ -32,6 +31,14 @@ body {
 }
 
 /* Four columns side by side */
+
+/* Three columns side by side */
+.nav-container{
+  font-family: Arial;
+  font-size: 15px;
+
+
+}
 .column {
   float: left;
   width: 25%;
@@ -85,12 +92,4 @@ body {
 
 .button:hover {
   background-color: #555;
-}
-
-.logo {
-  width: 5%;
-}
-
-.top-bar-right {
-  float: right;
 }
