@@ -231,6 +231,7 @@ async function fetchAPI() {
         .parent(".flex-container")
         .prev(".loaded")
         .attr("src"),
+      savedTitle: $(this).siblings(".titleSet").text()
     };
 
     var saved = JSON.parse(localStorage.getItem("recipes")) || [];
@@ -238,6 +239,13 @@ async function fetchAPI() {
     localStorage.setItem("recipes", JSON.stringify(saved));
   });
 }
+
+$(".remove-button").click(function(){
+localStorage.removeItem($(this));
+
+
+});
+
 // var ingredients = data.hits[0].recipe.ingredientLines
 
 // Modal
