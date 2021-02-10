@@ -49,11 +49,11 @@ async function fetchAPI() {
 
   // GETTTING INGREDIRENTS
 
-  var direction = document.querySelector(".direction");
-  var ingredients = data.hits[0].recipe.ingredientLines;
+  var direction = document.querySelector(".recipeContent0");
+  var ingredients0 = data.hits[0].recipe.ingredientLines;
 
-  for (i = 0; i < ingredients.length; i++) {
-    const element = ingredients[i];
+  for (i = 0; i < ingredients0.length; i++) {
+    const element = ingredients0[i];
     var ingredientLi = document.createElement("li");
 
     ingredientLi.innerHTML = element;
@@ -87,14 +87,20 @@ async function fetchAPI() {
   img.src = data.hits[1].recipe.image;
   console.log(data.hits[1].recipe.image);
 
-  // Modal Image & direction
-  var imgm1 = document.querySelector(".imgm1");
-  imgm1.src = data.hits[1].recipe.image;
-  console.log(data.hits[1].recipe.image);
+  // GETTTING INGREDIRENTS
 
-  var direction = document.querySelector(".direction1");
-  direction.textContent = data.hits[1].recipe.ingredientLines;
-  console.log(data.hits[1].recipe.ingredientLines);
+  var direction = document.querySelector(".recipeContent1");
+  var ingredients1 = data.hits[1].recipe.ingredientLines;
+
+  for (i = 0; i < ingredients1.length; i++) {
+    const element = ingredients1[i];
+    var ingredientLi = document.createElement("li");
+
+    ingredientLi.innerHTML = element;
+    direction.append(ingredientLi);
+    console.log(ingredientLi);
+  }
+
 
   // title
   var title = document.querySelector(".title1");
@@ -140,6 +146,20 @@ async function fetchAPI() {
   prep.textContent = "Prep: " + data.hits[2].recipe.totalTime + " mins";
   console.log(data.hits[2].recipe.totalTime);
 
+  // GETTTING INGREDIRENTS
+
+  var direction = document.querySelector(".recipeContent2");
+  var ingredients2 = data.hits[2].recipe.ingredientLines;
+
+  for (i = 0; i < ingredients2.length; i++) {
+    const element = ingredients2[i];
+    var ingredientLi = document.createElement("li");
+
+    ingredientLi.innerHTML = element;
+    direction.append(ingredientLi);
+    console.log(ingredientLi);
+  }
+
   // Recipe 3
 
   // IMG
@@ -165,6 +185,20 @@ async function fetchAPI() {
   // console.log(img);
   prep.textContent = "Prep: " + data.hits[3].recipe.totalTime + " mins";
   console.log(data.hits[3].recipe.totalTime);
+
+  // GETTTING INGREDIRENTS
+
+  var direction = document.querySelector(".recipeContent3");
+  var ingredients3 = data.hits[3].recipe.ingredientLines;
+
+  for (i = 0; i < ingredients3.length; i++) {
+    const element = ingredients3[i];
+    var ingredientLi = document.createElement("li");
+
+    ingredientLi.innerHTML = element;
+    direction.append(ingredientLi);
+    console.log(ingredientLi);
+  }
 
   // Recipe 4
 
@@ -192,6 +226,20 @@ async function fetchAPI() {
   prep.textContent = "Prep: " + data.hits[4].recipe.totalTime + " mins";
   console.log(data.hits[4].recipe.totalTime);
 
+  // GETTTING INGREDIRENTS
+
+  var direction = document.querySelector(".recipeContent4");
+  var ingredients4 = data.hits[4].recipe.ingredientLines;
+
+  for (i = 0; i < ingredients0.length; i++) {
+    const element = ingredients4[i];
+    var ingredientLi = document.createElement("li");
+
+    ingredientLi.innerHTML = element;
+    direction.append(ingredientLi);
+    console.log(ingredientLi);
+  }
+
   // Recipe 5
 
   // IMG
@@ -217,6 +265,20 @@ async function fetchAPI() {
   // console.log(img);
   prep.textContent = "Prep: " + data.hits[5].recipe.totalTime + " mins";
   console.log(data.hits[5].recipe.totalTime);
+
+  // GETTTING INGREDIRENTS
+
+  var direction = document.querySelector(".recipeContent5");
+  var ingredients5 = data.hits[5].recipe.ingredientLines;
+
+  for (i = 0; i < ingredients5.length; i++) {
+    const element = ingredients5[i];
+    var ingredientLi = document.createElement("li");
+
+    ingredientLi.innerHTML = element;
+    direction.append(ingredientLi);
+    console.log(ingredientLi);
+  }
 
   // var practiceList = document.getElementById("loaded234");
   // console.log("children", practiceList.children.length);
