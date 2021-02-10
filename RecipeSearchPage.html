@@ -14,16 +14,16 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Assets/CSS/recipeSearchPage.css">
-
+    <link rel="stylesheet" href="./Assets/CSS/recipeSearchPage.css" />
   </head>
 
   <body>
-      <!-- navbar -->
+    <!-- navbar -->
     <div
       class="top-bar"
       data-responsive-toggle="main-nav"
-      data-hide-for="medium">
+      data-hide-for="medium"
+    >
       <button class="dark" type="button" data-toggle="main-nav"></button>
 
       <!-- header -->
@@ -47,63 +47,62 @@
                 <li class="is-active"><a href="contact.html">Contact</a></li>
               </ul>
             </div>
+          </div>
         </div>
-    </div>
-            <!-- Search Bar for diets -->
-            <div class="container">
-                
-              <div class="row">
-                <div>
-                  <div class="orbit-container"></div>
-
-                  
-                </div>
-
-                <form>
-                  <input
-                    type="text"
-                    placeholder="Search Healthy Meals"
-                    id="diet"
-                  />
-                  <button class="center" id="searchBtn">Search</button>
-                </form>
-              </div>
+        <!-- Search Bar for diets -->
+        <div class="container">
+          <div class="row">
+            <div>
+              <div class="orbit-container"></div>
             </div>
-          
-        
+
+            <form>
+              <input type="text" placeholder="Search Healthy Meals" id="diet" />
+              <button class="center" id="searchBtn">Search</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
-
     <!-- ROW ONE -->
-    
+
     <div class="row">
       <div class="results hide">
         <!-- Recipe 0 -->
         <div class="item">
-          <img class="loaded img0" alt="" />
-          <div class="flex-container">
-            <h5 class="titleSet title0"><b></b></h5>
-            <h6 class="calories0"></h6>
-            <h6 class="prep0"></h6>
-            <a href="=#"></a>
-          </div>
-          <!-- Modal recipe 0 -->
-          <button id="modal-button" class="button">Click for Recipe</button>
-          <!-- Modal Content -->
-          <div id="simple-modal" class="modal-overlay">
-            <div class="modal-content">
-              <button class="close-button">X</button>
-              <div class="modal-body">
-                <img class="imgm0" src="img1.png" alt="" />
-                <li class="direction"></li>
+          <div class="columns medium-6">
+            <img class="loaded img0" alt="" />
+            <div class="flex-container">
+              <h5 class="titleSet title0"><b></b></h5>
+              <h6 class="calories0"></h6>
+              <h6 class="prep0"></h6>
+              <a href="=#"></a>
+            </div>
+
+            <div id="simple-modal" class="modal-overlay">
+              <div class="modal-content">
+                <button class="close-button">X</button>
+                <div class="modal-body">
+                  <img class="imgm0" src="img1.png" alt="" />
+                  <li class="direction"></li>
+                </div>
               </div>
             </div>
           </div>
+          <div class="columns medium-6">
+            <button>+</button>
+            <button>-</button>
+            <p class="recipeContent">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius a
+              deserunt eaque! Consequatur perspiciatis, iure error sapiente quas
+              nesciunt neque?
+            </p>
+          </div>
         </div>
-
-          <!-- recipe 1 -->
-          <div class="item">
+        <!-- recipe 1 -->
+        <div class="item">
+          <div class="columns medium-6">
             <img class="loaded img1" alt="" />
             <div class="flex-container">
               <h5 class="titleSet title1"><b></b></h5>
@@ -111,9 +110,7 @@
               <h6 class="prep1"></h6>
               <a href="=#"></a>
             </div>
-            <!-- Modal recipe 1 -->
-            <button id="modal-button1" class="button">Click for Recipe</button>
-            <!-- modal content-->
+
             <div id="simple-modal1" class="modal-overlay">
               <div class="modal-content">
                 <button class="close-button1">X</button>
@@ -124,114 +121,160 @@
               </div>
             </div>
           </div>
-        
-    
-        <!-- recipe 2 -->
-        <div class="item">
-          <img class="loaded img2" alt="" />
-          <div class="flex-container">
-            <h5 class="titleSet title2"><b></b></h5>
-            <h6 class="calories2"></h6>
-            <h6 class="prep2"></h6>
-            <a href="=#"></a>
-          </div>
-          <!-- Modal recipe 2 -->
-          <button id="modal-button" class="button">Click for Recipe</button>
-          <!-- Modal Content -->
-          <div id="simple-modal" class="modal-overlay">
-            <div class="modal-content">
-              <button class="close-button">X</button>
-              <div class="modal-body">
-                <img class="imgm2" src="" alt="" />
-                <li class="direction2"></li>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    </div>
-    
 
-
-    <!-- ROW TWO -->
-    <div class="row">
-
-
-    <!-- recipe 3 -->
-    <div class="results hide">
-      <div class="item">
-        <img class="img3" alt="" />
-        <div class="flex-container">
-          <h5 class="titleSet title3"><b></b></h5>
-          <h6 class="calories3"></h6>
-          <h6 class="prep3"></h6>
-          <a href="=#"></a>
-        </div>
-        <!-- Modal recipe 3 -->
-        <button id="modal-button" class="button">Click for Recipe</button>
-        <!-- Modal Content -->
-        <div id="simple-modal" class="modal-overlay">
-          <div class="modal-content">
-            <button class="close-button">X</button>
-            <div class="modal-body">
-              <img class="imgm3" src="" alt="" />
-              <li class="direction3"></li>
-            </div>
+          <div class="columns medium-6">
+            <button>+</button>
+            <button>-</button>
+            <p class="recipeContent">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius a
+              deserunt eaque! Consequatur perspiciatis, iure error sapiente quas
+              nesciunt neque?
+            </p>
           </div>
         </div>
       </div>
+    </div>
 
+    <!-- ROW TWO -->
 
-        <!-- recipe 4 -->
+    <div class="row">
+      <div class="results hide">
+        <!-- recipe 2 -->
         <div class="item">
-          <img class="loaded img4" alt="" />
-          <div class="flex-container">
-            <h5 class="titleSet title4"><b></b></h5>
-            <h6 class="calories4"></h6>
-            <h6 class="prep4"></h6>
-            <a href="=#"></a>
-          </div>
-          <!-- Modal recipe 3 -->
-          <button id="modal-button" class="button">Click for Recipe</button>
-          <!-- Modal Content -->
-          <div id="simple-modal" class="modal-overlay">
-            <div class="modal-content">
-              <button class="close-button">X</button>
-              <div class="modal-body">
-                <img class="imgm4" src="" alt="" />
-                <li class="direction4"></li>
+          <div class="columns medium-6">
+            <img class="loaded img2" alt="" />
+            <div class="flex-container">
+              <h5 class="titleSet title2"><b></b></h5>
+              <h6 class="calories2"></h6>
+              <h6 class="prep2"></h6>
+              <a href="=#"></a>
+            </div>
+
+            <div id="simple-modal" class="modal-overlay">
+              <div class="modal-content">
+                <button class="close-button">X</button>
+                <div class="modal-body">
+                  <img class="imgm2" src="" alt="" />
+                  <li class="direction2"></li>
+                </div>
               </div>
             </div>
           </div>
+          <div class="columns medium-6">
+            <button>+</button>
+            <button>-</button>
+            <p class="recipeContent">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius a
+              deserunt eaque! Consequatur perspiciatis, iure error sapiente quas
+              nesciunt neque?
+            </p>
+          </div>
         </div>
-    
-    
+
+        <!-- recipe 3 -->
+
+        <div class="item">
+          <div class="columns medium-6">
+            <img class="img3" alt="" />
+            <div class="flex-container">
+              <h5 class="titleSet title3"><b></b></h5>
+              <h6 class="calories3"></h6>
+              <h6 class="prep3"></h6>
+              <a href="=#"></a>
+            </div>
+
+            <div id="simple-modal" class="modal-overlay">
+              <div class="modal-content">
+                <button class="close-button">X</button>
+                <div class="modal-body">
+                  <img class="imgm3" src="" alt="" />
+                  <li class="direction3"></li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns medium-6">
+            <button>+</button>
+            <button>-</button>
+            <p class="recipeContent">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius a
+              deserunt eaque! Consequatur perspiciatis, iure error sapiente quas
+              nesciunt neque?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW THREE -->
+
+    <div class="row">
+      <div class="results hide">
+        <!-- recipe 4 -->
+        <div class="item">
+          <div class="columns medium-6">
+            <img class="loaded img4" alt="" />
+            <div class="flex-container">
+              <h5 class="titleSet title4"><b></b></h5>
+              <h6 class="calories4"></h6>
+              <h6 class="prep4"></h6>
+              <a href="=#"></a>
+            </div>
+
+            <div id="simple-modal" class="modal-overlay">
+              <div class="modal-content">
+                <button class="close-button">X</button>
+                <div class="modal-body">
+                  <img class="imgm4" src="" alt="" />
+                  <li class="direction4"></li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns medium-6">
+            <button>+</button>
+            <button>-</button>
+            <p class="recipeContent">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius a
+              deserunt eaque! Consequatur perspiciatis, iure error sapiente quas
+              nesciunt neque?
+            </p>
+          </div>
+        </div>
 
         <!-- recipe 5 -->
         <div class="item">
-          <img class="loaded img5" alt="" />
-          <div class="flex-container">
-            <h5 class="titleSet title5"><b></b></h5>
-            <h6 class="calories5"></h6>
-            <h6 class="prep5"></h6>
-            <a href="=#"></a>
-          </div>
-          <!-- Modal recipe 3 -->
-          <button id="modal-button" class="button">Click for Recipe</button>
-          <!-- Modal Content -->
-          <div id="simple-modal" class="modal-overlay">
-            <div class="modal-content">
-              <button class="close-button">X</button>
-              <div class="modal-body">
-                <img class="imgm5" src="" alt="" />
-                <li class="direction5"></li>
+          <div class="columns medium-6">
+            <img class="loaded img5" alt="" />
+            <div class="flex-container">
+              <h5 class="titleSet title5"><b></b></h5>
+              <h6 class="calories5"></h6>
+              <h6 class="prep5"></h6>
+              <a href="=#"></a>
+            </div>
+
+            <div id="simple-modal" class="modal-overlay">
+              <div class="modal-content">
+                <button class="close-button">X</button>
+                <div class="modal-body">
+                  <img class="imgm5" src="" alt="" />
+                  <li class="direction5"></li>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="columns medium-6">
+            <button>+</button>
+            <button>-</button>
+            <p class="recipeContent">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius a
+              deserunt eaque! Consequatur perspiciatis, iure error sapiente quas
+              nesciunt neque?
+            </p>
           </div>
         </div>
       </div>
     </div>
-
 
     <!-- Results column -->
     <script>
