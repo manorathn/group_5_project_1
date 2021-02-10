@@ -1,36 +1,40 @@
 // Edamame API setup
-const APIKey = "458ba6347df752837e263807d257869b"
-const appId = "14bab965"
-const edamameURL = "https://api.edamam.com/search?q="
+const APIKey = "458ba6347df752837e263807d257869b";
+const appId = "14bab965";
+const edamameURL = "https://api.edamam.com/search?q=";
 
-
-var searchForm = document.querySelector('form');
+var searchForm = document.querySelector("form");
 var searchEl = document.querySelector("#searchBtn");
-let searchQuery = '';
+let searchQuery = "";
 
-searchForm.addEventListener('submit', (event) => {
+searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
   searchQuery = event.target.querySelector("input").value;
 
-  $(".results").removeClass("hide")
+  $(".results").removeClass("hide");
   // if (searchQuery !== keto || vegan || balanced || pescetarian) {
   //     alert("Please select Keto, Vegan, Balanced, Pescetarian");
   // }
   console.log(searchQuery);
-  fetchAPI()
+  fetchAPI();
 });
 
-
 async function fetchAPI() {
-  const edamame = edamameURL + searchQuery + '&app_id=' + appId + '&app_key=' + APIKey + '&to=10';
+  const edamame =
+    edamameURL +
+    searchQuery +
+    "&app_id=" +
+    appId +
+    "&app_key=" +
+    APIKey +
+    "&to=10";
   // console.log(edamame);
   const response = await fetch(edamame);
   console.log(response);
   const data = await response.json();
   // generateHTML(data.hits);
   console.log(data);
- 
- 
+
   // Recipe 0
   // IMG
   var img = document.querySelector(".img0");
@@ -45,17 +49,17 @@ async function fetchAPI() {
 
   // GETTTING INGREDIRENTS
 
-  var direction = document.querySelector(".direction")
-  var ingredients = data.hits[0].recipe.ingredientLines
-  
-    for ( i = 0; i < ingredients.length; i++) {
-      const element = ingredients[i];
-      var ingredientLi = document.createElement('li')
-      
-      ingredientLi.innerHTML = element
-      direction.append(ingredientLi)
-      console.log(ingredientLi)
-    }
+  var direction = document.querySelector(".direction");
+  var ingredients = data.hits[0].recipe.ingredientLines;
+
+  for (i = 0; i < ingredients.length; i++) {
+    const element = ingredients[i];
+    var ingredientLi = document.createElement("li");
+
+    ingredientLi.innerHTML = element;
+    direction.append(ingredientLi);
+    console.log(ingredientLi);
+  }
 
   // title
   var title = document.querySelector(".title0");
@@ -75,9 +79,6 @@ async function fetchAPI() {
   prep.textContent = "Prep: " + data.hits[0].recipe.totalTime + " mins";
   console.log(data.hits[0].recipe.totalTime);
 
-
-
-
   // Recipe 1
 
   // IMG
@@ -91,7 +92,7 @@ async function fetchAPI() {
   imgm1.src = data.hits[1].recipe.image;
   console.log(data.hits[1].recipe.image);
 
-  var direction = document.querySelector(".direction1")
+  var direction = document.querySelector(".direction1");
   direction.textContent = data.hits[1].recipe.ingredientLines;
   console.log(data.hits[1].recipe.ingredientLines);
 
@@ -216,27 +217,28 @@ async function fetchAPI() {
   // console.log(img);
   prep.textContent = "Prep: " + data.hits[5].recipe.totalTime + " mins";
   console.log(data.hits[5].recipe.totalTime);
-  
-  // Function for localStorage 
-   $(".loaded").click(function(){
-   console.log($(this));
-   var recipe = 
-    {
-      savedImgUrl: $(this).attr("src"), 
-      savedTitle: $(this).siblings(".flex-container").children(".titleSet").text(),
-      savedIngredients: $(this).siblings(".siblings")
+
+  // var practiceList = document.getElementById("loaded234");
+  // console.log("children", practiceList.children.length);
+  // Function for localStorage
+  $(".add-button").click(function () {
+    console.log($(this));
+    var recipe = {
+      // savedImgUrl: $(this).attr("src"),
+      // savedTitle: $(this).siblings(".flex-container").children(".titleSet").text(),
+      // savedIngredients: $(this).siblings(".siblings")
+      savedImgUrl: $(this)
+        .parent(".flex-container")
+        .prev(".loaded")
+        .attr("src"),
     };
-   
-    var saved = JSON.parse(localStorage.getItem("recipes"))||[];
+
+    var saved = JSON.parse(localStorage.getItem("recipes")) || [];
     saved.push(recipe);
     localStorage.setItem("recipes", JSON.stringify(saved));
-  
   });
 }
-var ingredients = data.hits[0].recipe.ingredientLines
-
-
-
+// var ingredients = data.hits[0].recipe.ingredientLines
 
 // Modal
 
@@ -244,7 +246,6 @@ var modal = Array.from(document.getElementsByClassName("modal-overlay"));
 
 for (let i = 0; i < modal.length; i++) {
   const open = modal[i];
-  
 
   function openModal() {
     open.style.display = "block";
@@ -259,38 +260,22 @@ for (let i = 0; i < modal.length; i++) {
   function closeModal() {
     open.style.display = "none";
   }
-
 }
-
 
 var modalBtn = Array.from(document.getElementsByClassName("button"));
 for (let i = 0; i < modalBtn.length; i++) {
   const close = modalBtn[i];
 
   close.addEventListener("click", openModal);
-  
 }
-
-
-
 
 var closeBtn = Array.from(document.getElementsByClassName("close-button"));
 for (let i = 0; i < closeBtn.length; i++) {
   const element = closeBtn[i];
-  
-  element.addEventListener("click", closeModal);
-  
-}
 
+  element.addEventListener("click", closeModal);
+}
 
 window.addEventListener("click", outsideClick);
 
-
-
-
-
-
-
-
 searchEl.addEventListener("click", fetchAPI);
-
