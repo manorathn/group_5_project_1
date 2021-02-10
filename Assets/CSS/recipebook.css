@@ -1,3 +1,28 @@
+.big-image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../../IMG/bg-img.jpeg");
+} 
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  color: black;
+  display: flex transparent;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: .9;
+}
 .nav-container{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
