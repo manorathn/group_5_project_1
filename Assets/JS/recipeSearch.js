@@ -224,14 +224,13 @@ async function fetchAPI() {
   $(".add-button").click(function () {
     console.log($(this));
     var recipe = {
-      // savedImgUrl: $(this).attr("src"),
-      // savedTitle: $(this).siblings(".flex-container").children(".titleSet").text(),
-      // savedIngredients: $(this).siblings(".siblings")
+
       savedImgUrl: $(this)
         .parent(".flex-container")
         .prev(".loaded")
         .attr("src"),
-      savedTitle: $(this).siblings(".titleSet").text()
+      savedTitle: $(this).siblings(".titleSet").text(),
+      savedRecipe: $(this).siblings(".recipeContent").text()
     };
 
     var saved = JSON.parse(localStorage.getItem("recipes")) || [];
@@ -241,7 +240,8 @@ async function fetchAPI() {
 }
 
 $(".remove-button").click(function(){
-localStorage.removeItem($(this));
+  localStorage.removeItem("recipes");
+
 
 
 });
