@@ -42,5 +42,9 @@ List of features ready and TODOs for future development
 * Store your favorite recipes for later.
 
 TODO
-- 
+- a next button for more recipes outside of 1 page
+8:43
+- deleting 1 recipe at a time instead of clearing the whole localstorage
+8:43
+- turning more towards an application rather than website with an application
 
