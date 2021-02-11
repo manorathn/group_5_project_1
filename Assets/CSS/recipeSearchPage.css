@@ -184,3 +184,9 @@ container {
   .hide {
       display: none;
   }
+
+  #searchBtn {
+    background-color: lightgreen;
+    border-radius: 50px;
+    border-width: 60px;
+  }
