@@ -7,7 +7,7 @@ var recipeList = JSON.parse(localStorage.getItem("recipes"));
 // };
 // console.log($(".recipe-container"))
 // $(".recipe-loaded").click(function () {
-  function displayIt (){
+function displayIt (){
   for (i = 0; i < recipeList.length; i++) {
      var newEL = $("<img>")
       .attr("src", recipeList[i].savedImgUrl)
